@@ -13349,7 +13349,7 @@ The density of this dataset provided me a unique opportunity to explore it in a 
 <figure>
 <center>
 <img src="https://drive.google.com/uc?id=1-7hsSNysKZfrMjID16XQNhO8gW5HTOZN"alt="image_7" width="550" height="400">
-<figcaption><font size="+1"><b> How the median loan is distributed amont different states of the US? </b></font></figcaption>
+<figcaption><font size="+1"><b> How the median loan is distributed among different states of the US? </b></font></figcaption>
 </center>
 </figure>
 
@@ -13357,7 +13357,7 @@ The density of this dataset provided me a unique opportunity to explore it in a 
 <figure>
 <center>
 <img src="https://drive.google.com/uc?id=1-Ea3XxvUr3QeV8eEYbH72M91jy8Ll83t"alt="image_7" width="550" height="400">
-<figcaption><font size="+1"><b> How the median annual income is distributed amont different states of the US? </b></font></figcaption>
+<figcaption><font size="+1"><b> How the median annual income is distributed among different states of the US? </b></font></figcaption>
 </center>
 </figure>
 
@@ -13613,7 +13613,7 @@ More can be learned about it from this great resource <a href="https://statistic
 
 <p>From Cramers V correlation it can be said that some of the features are highly correlated with each other (grade and sub_grade) while the Theil U coefficient inform about the importance of a particular feature which indicates directly towards the target variable. So first I will keep those object type variables which have good enough information about the target variables and then remove the object type variables which are highly correlated among themselves.</p>
 <p><b>Encoding the categorical features</b></p>
-<p>Some of the object features are of very high cardinality. one hot encoding will make a feature explosion. The following link and library mentions about some ways to deal with features with very high cardinality. <a href="http://contrib.scikit-learn.org/category_encoders/index.html"></a>. I can use hashing but the hashing algorithm may put different categories in the same group--might affect the target negatively. Other way around is the target encoding which is explained quite well in the following link--<a href="https://maxhalford.github.io/blog/target-encoding/"></a>
+<p>Some of the object features are of very high cardinality. one hot encoding will make a feature explosion.<a href="http://contrib.scikit-learn.org/category_encoders/index.html">The following link and library mentions about some ways to deal with features with very high cardinality</a>. I can use hashing but the hashing algorithm may put different categories in the same group--might affect the target negatively.<a href="https://maxhalford.github.io/blog/target-encoding/"> Other way around is the target encoding which is explained quite well in the link which can be accessed by clicking here.</a>
 
 I could have used the mean encoding. However, I decide to follow the Laplace smoothing of the local mean. It is because if there is a very low occurence of a certain instance of a feature then its local mean cannot be trusted. Then a more heavy emphasis should be given on the global mean.</p>
 
@@ -14061,7 +14061,7 @@ However, the following measures are readily available for the classification pro
 <ul><li><b>Explaining the affect of the features on the model outcome</b></li></ul>
 
 <p>How much has each feature value contributed to the prediction compared to the average prediction?
-The answer to this question lies in the Shap values--which essentially tells how much a change in feature will drive the output away from the average prediction. A typical example of the house price prediction is given here <a href="https://christophm.github.io/interpretable-ml-book/shap.html"></a> which explains the idea quite well. For linear model the driver which will move the output away from average will be the weight times the feature value but for non-linear model this is not straightforward to answer. The Shap values are model agnostic and exactly explains the same. SHAP values has their origin in the game theory. The “game” here is the prediction task for a single instance of the dataset. The “players” are the feature values of the instance that collaborate to play the game (predict a value)--i.e. the loan is going to get charged off or not. In short Shapley values correspond to the contribution of each feature towards pushing the prediction away from the expected value of the model outcome. The above analysis was for shap values for each feature of every observation, it is possible to get a global interpretation using Shapley values by looking at it in a combined form.
+The answer to this question lies in the Shap values--which essentially tells how much a change in feature will drive the output away from the average prediction. <a href="https://christophm.github.io/interpretable-ml-book/shap.html">A typical example of the house price prediction is given here</a> which explains the idea quite well. For linear model the driver which will move the output away from average will be the weight times the feature value but for non-linear model this is not straightforward to answer. The Shap values are model agnostic and exactly explains the same. SHAP values has their origin in the game theory. The “game” here is the prediction task for a single instance of the dataset. The “players” are the feature values of the instance that collaborate to play the game (predict a value)--i.e. the loan is going to get charged off or not. In short Shapley values correspond to the contribution of each feature towards pushing the prediction away from the expected value of the model outcome. The above analysis was for shap values for each feature of every observation, it is possible to get a global interpretation using Shapley values by looking at it in a combined form.
 </p>
 
 <figure>
@@ -14087,7 +14087,7 @@ A significant number of features in the current dataset are not indicative of th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">shell</span>
@@ -14109,14 +14109,14 @@ jupyter nbconvert --to html /content/Project_1_report.ipynb
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook /content/Project_1_report.ipynb to html
-[NbConvertApp] Writing 310358 bytes to /content/Project_1_report.html
+[NbConvertApp] Writing 310352 bytes to /content/Project_1_report.html
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 

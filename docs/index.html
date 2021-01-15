@@ -14070,8 +14070,16 @@ The answer to this question lies in the Shap values--which essentially tells how
 <figcaption><font size="+1"><b> SHAP values for the XGBOOST model. </b></font></figcaption>
 </center>
 </figure>
+<p>The SHAP value plot can show the positive and negative relationships of the predictors with the target variable. They do so by showing the following attributes:</p>
+<ol>
+<li>Feature importance: Variables are ranked in descending order.</li>
+<li>Impact: The horizontal location shows whether the effect of that value is associated with a higher or lower prediction.</li>
+<li>Original value: Color shows whether that variable is high (in red) or low (in blue) for that observation.</li>
+<li>Correlation: A high value of the “grade_encoded” has a high and positive impact on the classification of a potential defaulter. The “high” comes from the red color, and the “positive” impact is shown on the X-axis.</li>
 
-<p>Target encoded grade has the highest effect on the model output. This makes sense as I saw in the Sankey chart that there is a good correlation between the grades, house ownership and the loans. This means that the lending club tend to trust people which falls in the better category--which intuitively makes sense.</p>
+</ol>
+
+<p>The shap values makes sense as I saw in the Sankey chart that there is a good correlation between the grades, house ownership and the loans. This means that the lending club tend to trust people which falls in the better category--which intuitively makes sense.</p>
 </section><section>
 <h2>
 <b>Conclusion</b>
@@ -14095,6 +14103,38 @@ jupyter nbconvert --to html /content/Project_1_report.ipynb
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook /content/Project_1_report.ipynb to html
+[NbConvertApp] Writing 309837 bytes to /content/Project_1_report.html
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre></pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
